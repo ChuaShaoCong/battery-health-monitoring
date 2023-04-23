@@ -16,6 +16,7 @@ This script logs the maximum capacity percentage and cycle count of a MacBook's 
 1. Open Terminal.
 2. Navigate to the folder containing the script (e.g., `cd /path/to/script`).
 3. Run the script using the following command: python3 battery_data_logger.py
+4. Read `setting_up_daily_automation.md` for how to execute the script automatically every day
 
 The script will create or update the `battery_data.csv` file in the same folder, logging the date, maximum capacity percentage, and cycle count of the MacBook's battery.
 
