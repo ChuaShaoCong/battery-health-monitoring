@@ -1,6 +1,3 @@
-# battery-health-monitoring
-Automated script to monitor laptop battery degradation over time by extracting maximum capacity percentage and cycle count data.
-
 # Battery Data Logger
 
 This script logs the maximum capacity percentage and cycle count of a MacBook's battery. The data is stored in a CSV file called `battery_data.csv`. The script ensures that only one entry is logged per day, and if the script is run multiple times within the same day, it will use the latest value and overwrite the previous value for that day.
