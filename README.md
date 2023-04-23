@@ -1,6 +1,6 @@
 # Battery Data Logger
 
-This tool is part of a larger project aimed at testing different strategies to maximize battery lifespan health.
+This tool is part of a larger project aimed at testing different strategies to minimize battery capacity degradation
 
 The macOS System Information solely provides information on the current state of the battery, and doesn't preserve a historical log. This script extracts and logs the data daily to enable better tracking of the battery's health over time and detect any issues or degradation
 
