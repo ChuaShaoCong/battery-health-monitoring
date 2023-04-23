@@ -2,7 +2,7 @@
 
 This tool is part of a larger project aimed at testing different strategies to maximize battery lifespan health.
 
-The macOS System Information solely provides information on the current state of the battery, and doesn't maintain a historical record. This script extracts and logs the data daily to enable better tracking of the battery's health over time and detect any issues or degradation
+The macOS System Information solely provides information on the current state of the battery, and doesn't preserve a historical log. This script extracts and logs the data daily to enable better tracking of the battery's health over time and detect any issues or degradation
 
 ## How it works
 
