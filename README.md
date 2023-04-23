@@ -1,5 +1,11 @@
 # Battery Data Logger
 
+This tool is part of a larger project aimed at testing different strategies to maximize battery lifespan health.
+
+The macOS System Information solely provides information on the current state of the battery, and doesn't maintain a historical record. This script extracts and logs the data daily to enable better tracking of the battery's health over time and detect any issues or degradation
+
+## How it works
+
 This script logs the maximum capacity percentage and cycle count of a MacBook's battery. The data is stored in a CSV file called `battery_data.csv`. The script ensures that only one entry is logged per day, and if the script is run multiple times within the same day, it will use the latest value and overwrite the previous value for that day.
 
 ## Requirements
