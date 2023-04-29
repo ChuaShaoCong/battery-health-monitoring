@@ -3,6 +3,11 @@ import re
 import csv
 import datetime
 from pathlib import Path
+import os
+
+# Send a notification with the given title and message
+def send_notification(title, message):
+    os.system(f"osascript -e 'display notification \"{message}\" with title \"{title}\"'")
 
 def get_battery_capacity_and_cycle_count():
     # Use ioreg command to get battery information
@@ -41,7 +46,8 @@ def log_battery_data_to_csv():
         if row and row[0] == today_date:
             todays_data_index = index
             break
-
+    send_notification("Battery Health", f"Health: {max_capacity_percentage:.2f}%, Cycle Count: {cycle_count}")
+                      
     # Write the data back to the file, updating today's data if it exists
     with open(csv_file_path, mode='w', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
@@ -61,7 +67,7 @@ def log_battery_data_to_csv():
 
 if __name__ == "__main__":
     log_battery_data_to_csv()
-
+    
 
 # import subprocess
 # import re
